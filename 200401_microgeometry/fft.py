@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 # nacteni dat
 data = pd.read_csv('data/micro.txt', sep=';')
 
-
+analyzed_samples = 4000
 fft_all = []
 data_all = []
 t = data['x'][1] - data['x'][0]
@@ -40,7 +40,7 @@ for i in range(len(data_all)):
     plt.xlim(0.1, 100)
 
     if i == len(fft_all) - 1:
-        plt.xlabel('Frekvence [Hz]')
+        plt.xlabel('Četnost vzorků [1/m]')
 
     plt.grid()
 
