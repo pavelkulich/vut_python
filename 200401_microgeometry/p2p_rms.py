@@ -25,7 +25,7 @@ wave_len = {'p1': 0.150,
             'p4': 5.000}
 
 # nacteni dat
-data = pd.read_csv('data/micro.csv', sep=';')
+data = pd.read_csv('data/micro.txt', sep=';')
 
 # osa x
 x = data['x']

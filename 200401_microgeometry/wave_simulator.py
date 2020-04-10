@@ -7,8 +7,8 @@ x = np.linspace(0, 0.5 * np.pi, 5000)
 xf = np.linspace(0, 1 / (x[1] - x[0]), 8192)
 
 # vypocet funkci sinus
-cos1 = np.cos(40 * 2 * np.pi * x) * 3
-cos2 = np.cos(90 * 2 * np.pi * x) * 2
+cos1 = np.sin(40 * 2 * np.pi * x) * 3
+cos2 = np.sin(90 * 2 * np.pi * x) * 2
 cos3 = np.cos(25 * 2 * x * np.pi + 1)
 cos_sum = cos1 + cos2 + cos3
 

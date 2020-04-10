@@ -4,9 +4,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # nacteni dat
-data = pd.read_csv('data/micro.csv', sep=';')
+data = pd.read_csv('data/micro.txt', sep=';')
 
-analyzed_samples = 4096
+
 fft_all = []
 data_all = []
 t = data['x'][1] - data['x'][0]
@@ -34,7 +34,7 @@ for i in range(len(data_all)):
     plt.ylabel('Amplituda [-]')
     plt.grid()
     plt.subplot(len(fft_all), 2, 2 * i + 2, xmargin=0)
-    plt.plot(xf[0:xf.size // 2], np.abs(fft_all[i][0:xf.size // 2]) / xf.shape[0])
+    plt.plot(xf[:xf.size // 2], np.abs(fft_all[i][:xf.size // 2]) / xf.shape[0])
     plt.title(f'FFT pásma {columns[i]}', fontsize=15)
     plt.xscale('log')
     plt.xlim(0.1, 100)

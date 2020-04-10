@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # nacteni dat
-data = pd.read_csv('data/micro.csv', sep=';')
+data = pd.read_csv('data/micro.txt', sep=';')
 
 # vytvoreni pole od indexu 1 do konce (vybechani prvniho sloupce)
 # hodnoty jsou doplnovany do popisku grafu
