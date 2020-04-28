@@ -3,6 +3,7 @@ CREATE TABLE 'ucastnici' (
 	'kurz' STRING,
 	'jmeno' STRING,
 	'prijmeni' STRING,
+	'vek' INTEGER,
 	'adresa' STRING,
 	'znalost' STRING
 );
